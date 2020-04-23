@@ -3,15 +3,33 @@
 Integration instructions:
  you will need a working Drupal 8 with the latest version of Drupal Commerce 2 installed.
 
-add the following to your composer.json
+add the following to your composer.json under repositories:
+
+"repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "payfast",
+        "version": "2.3.0",
+        "type": "drupal-module",
+        "source": {
+            "url": "https://github.com/stewest/commerce_payfast.git",
+            "type": "git",
+            "reference": "2.3.0"
+          }
+      }
+    }
+
+and then:
 
 "extra": {
   "installer-paths": {
     "web/modules/contrib/commerce/modules/{$name}": [
-      "commerce/payfast"
+      "payfast"
     ],
   }
 }
+
 
 Depends on your module folder path root/web/modules... or root/modules...
 
