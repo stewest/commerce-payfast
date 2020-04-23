@@ -1,0 +1,7 @@
+{
+  "name": "commerce/payfast",
+  "type": "drupal-module",
+  "description": "Payfast Drupal Commerce 2 payment gateway",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev"
+}
